@@ -8,7 +8,7 @@ function verificarStatusFuncionamento() {
       if (hora >= 7 && hora < 12) {  // De sabado e domingo
       } else {
         return 'Fechado';
-      }
+      } 
     } else if (hora >= 7 && hora < 17) { // De segunda a sexta
       return 'Aberta';
     } else {
@@ -19,3 +19,11 @@ function verificarStatusFuncionamento() {
   const status = verificarStatusFuncionamento();
   const statusElement = document.getElementById('status');
   statusElement.textContent = `${status}`;
+
+  if (status === 'Aberta') {
+  statusElement.textContent = 'Aberta';
+  statusElement.style.color = 'green';
+} else {
+  statusElement.textContent = 'Fechado';
+  statusElement.style.color = 'red';
+}
