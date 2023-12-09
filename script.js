@@ -27,3 +27,20 @@ function verificarStatusFuncionamento() {
   statusElement.textContent = 'Fechado';
   statusElement.style.color = 'red';
 }
+
+
+
+// Esse código abre e fecha o menu lateral para a lateral esquerda
+
+const menuLateral = document.querySelector(".menu-lateral");
+
+const toggleButton = document.querySelector(".toggle-menu");
+
+toggleButton.addEventListener("click", () => {
+  menuLateral.classList.toggle("is-open");
+  if (menuLateral.classList.contains("is-open")) {
+    menuLateral.style.left = "0";
+  } else {
+    menuLateral.style.left = "-100%";
+  }
+});

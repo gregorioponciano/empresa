@@ -57,6 +57,8 @@ body{
                 color: blue;
     }
 
+    .container {display: none;}
+
 
 
     /*DIV*/  /*DIV*/ /*DIV*/ /*DIV*/
@@ -180,35 +182,59 @@ body{
                                 background-repeat: no-repeat;
                                 background-position: center center;
                                 height: 300px;
-    }           
+    }  
+    
+    .container {display: block;}
 
-    .h1-cabeça{
-                                text-align: center;
-                                color: green;
-                                padding: 30px;
-                                text-shadow: 1px 1px 3px black;
-    }
-
-    .li-cabeça{
-                                list-style-type: none;
-                                margin: 10px;
-                                padding: 5px;
-    }
-
-    .li-cabeça:hover {
-                                background-color: rgba(82, 88, 88, 0.308);
-    }
-
-    .a-cabeça{
-                                display: block;
-                                text-align: center;
-                                text-decoration: none;
-                                color: white;
-    }
-
-    .a-cabeça:hover {
-                                color: green;
-    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .main {
+        width: 70%;
+        margin: 0 auto;
+      }
+      
+      .menu-lateral {
+        width: 30%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #ffffff;
+        border-right: 1px solid #000;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      li {
+        padding: 10px 0;
+      }
+      
+      a {
+        color: #000;
+        font-size: 16px;
+      }
+      
+      a:hover {
+        color: #333;
+      }
+    
+      .toggle-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
 
 
 
